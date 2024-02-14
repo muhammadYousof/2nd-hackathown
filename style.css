@@ -66,6 +66,10 @@
     width: 75%;
 }
 
+.alex{
+    color: #fff;
+}
+
 .sidebar{
     width: 25%;
     height: 100vh;
@@ -115,7 +119,11 @@
     color: #fff;
     text-align: center;
     font-size: 17px;
+    transition: all 0.3s linear;
+}
 
+.icon i:hover{
+    transform: scale(1.3);
 }
 
 
@@ -138,7 +146,13 @@
     margin-left: 2rem;
     margin-top: 2rem;
     font-size: 17px;
+    transition: all 0.3s linear;
 }
+
+.icon2 i:hover{
+    transform: scale(1.1);
+}
+
 
 .sidebar a {
     padding-left: 1rem;
@@ -368,7 +382,7 @@
 .container h1 {
     margin-left: 20px;
     padding-top: 50px;
-    /* color: #173b6c; */
+    color: #173b6c;
  
 }
 
@@ -384,6 +398,7 @@
     margin-left: 20px;
     margin-bottom: 40px;
     font-size: 17px;
+    color: #55bbea;
 
 }
 
@@ -415,6 +430,58 @@
 }
 
 
+@media(min-width: 200px) and (max-width: 430px) {
+    .sidebar1{
+        display: none;
+    }
+
+    .contant-img h1{
+    color: #fff;
+    font-size: 30px;
+}
+
+.contant-img h3{
+    color: #fff;
+    cursor: pointer;
+    transition: 0.6s;
+    font-size: 20px;
+}
+
+    .cont1{
+        width: 100%;
+    }
+
+    .contant-img {
+        height: 100vh;
+        width: 100%;
+        background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(./WhatsApp\ Image\ 2024-02-09\ at\ 9.45.01\ PM.jpeg);
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .four-icon {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 3rem;
+        /* flex-wrap: wrap; */
+        /* width: 100%; */
+    }
+    
+    .icon6{
+        text-align: center;
+        padding: 1rem;
+        width: 100%;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    }
+ 
+}
+
+
 
 
 /* <!-- ------- fact section --------- --> */
@@ -427,7 +494,7 @@
 .about h1{
     border-bottom: 3px solid #149ddd;
     width: 90px;
-    color: #4b5058;
+    color: #173b6c;
     flex-wrap: wrap;
 }
 
@@ -451,7 +518,13 @@
     font-size: 40px;
     margin: 2rem;
     color: #30a9e1;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
 
+.four-icon i:hover{
+    transform: scale(1.1);
+    color: yellow;
 }
 
 span{
@@ -535,10 +608,16 @@ span{
 
     .sklis-1 {
         width: 100%;
-        height: 10px;
         background-color: #149ddd;
         margin: 1rem;
+        padding: 1rem;
     }
+
+    .sklis7 h3{
+        padding: 1rem;
+    }
+
+   
 }
 
 
@@ -554,7 +633,7 @@ span{
     border-bottom: 3px solid #149ddd;
     width: 90px;
     margin-top: 5rem;
-    color: #4b5058;
+    color: #173b6c;
 }
 
 /* <!-- -------- summry section --------- --> */
@@ -577,11 +656,11 @@ span{
 }
 
 .summry1 p{
-    color: #277194;
+    color: #149ddd;
 }
 
 .summry1 li{
-    color: #6b92a3;
+    color: #149ddd;
 }
 
 .summry1 h3{
@@ -631,7 +710,7 @@ span{
 .prtofolio h1{
     border-bottom: 3px solid #149ddd;
     width: 130px;
-    color: #4b5058;
+    color: #173b6c;
 }
 
 .prtofolio p{
@@ -709,7 +788,7 @@ span{
     width: 100px;
     border-bottom: 3px solid #173b6c;
     margin-bottom: 1rem;
-    color: #4b5058;
+    color: #173b6c;
 }
 
 .services p{
@@ -752,6 +831,13 @@ span{
     font-size: 30px;
     padding: 0.7rem;
     color: #fff;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+
+.six-card8 i:hover{
+    transform: scale(1.2);
+    color: rgb(20, 20, 69);
 }
 
 @media (max-width:1100px){
@@ -799,7 +885,7 @@ span{
     width: 130px;
     margin-bottom: 1rem;
     margin: 2rem;
-    color: #4b5058;
+    color: #173b6c;
 }
 
 .testimonials p{
@@ -981,7 +1067,7 @@ span{
     width: 90px;
     border-bottom: 3px solid #173b6c;
     margin-bottom: 1rem;
-    color: #4b5058;
+    color: #173b6c;
 }
 
 .contact p{
@@ -1019,10 +1105,12 @@ span{
     font-size: 22px;
     cursor: pointer;
     transition: 1s;
+    transition: all 0.3s linear;
 }
 
 .icon-form i:hover {
     color: #fff;
+    transform: scale(1.3);
 }
 
 .form-icon {
@@ -1132,7 +1220,7 @@ iframe{
     }
 
     .input-one .send{
-        width: 100px;
+        width: 100%;
         height: 40px;
         /* display: flex;
         justify-content: center; */
@@ -1177,11 +1265,6 @@ iframe{
         box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
     }
     
-    .input1 .subject{
-        width: 100%;
-        border: none;
-        box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-    }
 }
 
 
